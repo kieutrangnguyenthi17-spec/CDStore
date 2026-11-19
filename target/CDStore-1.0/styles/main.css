@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 92%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: #008b8b;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 18px 0 10px 0;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #555555;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.product-table th {
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.product-table .price,
+.product-table th:nth-child(2),
+.product-table th:nth-child(3):not(:last-child),
+.product-table th:nth-child(4),
+.product-table td:nth-child(3):not(:last-child),
+.product-table td:nth-child(4) {
+    text-align: right;
+    width: 110px;
+    white-space: nowrap;
+}
+
+.product-table th:nth-child(2):not(:last-child),
+.product-table td:nth-child(2):not(:last-child) {
+    text-align: left;
+    width: auto;
+}
+
+.product-table td:last-child:has(button) {
+    width: 130px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 4px 6px;
+    font-size: 14px;
+    margin-right: 6px;
+    border: 1px solid #888888;
+    border-radius: 2px;
+}
+
+button {
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #f0f0f0;
+    border: 1px solid #767676;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+}
+
+.product-table form {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+a {
+    color: #008b8b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body > form {
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 96%;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 7px 6px;
+        font-size: 12px;
+    }
+
+    input[type="number"] {
+        width: 45px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+}
